@@ -257,6 +257,11 @@ function getTriples(entities, callback) {
 
 function checkLogin() {
     $(".uploadLogin").hide();
+    $(".uploadForm").show();
+}
+/*
+function checkLogin() {
+    $(".uploadLogin").hide();
     $(".uploadForm").hide();
     $.ajax({
         url:"http://data.labs.freebase.com/freeq/spreadsheet/",
@@ -278,6 +283,7 @@ function checkLogin() {
                 error(response);
         }});
 }
+*/
 
 function form_handler(result){
   var url=result.result.status_url;
