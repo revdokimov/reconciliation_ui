@@ -282,7 +282,7 @@ function checkLogin() {
 function form_handler(result){
   var url=result.result.status_url;
   var job_id=result.result.job_id;
-  url="http://data.labs.freebase.com/freeq/spreadsheet/"+job_id;
+  url="/freeq/spreadsheet/"+job_id;
   $(".uploadForm").hide();
   $("#upload_progressbar").progressbar({value:0});
   $("#upload_progressbar").show();
